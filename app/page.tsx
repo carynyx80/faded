@@ -47,7 +47,7 @@ const metrics = [
   { Icon: Clock3, label: "Median Fill Time", value: "11.4s" },
   { Icon: Cpu, label: "Active TEE Solvers", value: "14" },
   { Icon: Fingerprint, label: "Unlinkability Score", value: "99.4%" },
-  { Icon: Zap, label: "$SHROUD Fee Discount", value: "Up to 60%" },
+  { Icon: Zap, label: "$QUIETDESK Fee Discount", value: "Up to 60%" },
 ];
 const storageKey = "shroud.preview.receipts.v1";
 const addressPattern = /^0x[0-9a-fA-F]{40}$/;
@@ -244,13 +244,18 @@ export default function Home() {
           <button
             className="brand"
             onClick={() => setTab("Route")}
-            aria-label="SHROUD home"
+            aria-label="quietdesk home"
           >
-            <span className="brand-mark">
-              <Shield size={25} fill="currentColor" />
-              <span />
-            </span>
-            SHROUD
+            <svg className="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+              <path
+                d="M22 8v20M22 14c0 4.4-3.4 8-7.5 8S7 18.4 7 14s3.4-8 7.5-8 7.5 3.6 7.5 8Z"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="4"
+                strokeLinecap="round"
+              />
+            </svg>
+            quietdesk
           </button>
           <nav aria-label="Main navigation">
             {tabs.map((item) => (
@@ -532,7 +537,7 @@ export default function Home() {
                             setDiscount(event.target.checked)
                           }
                         />
-                        <span>$SHROUD tier</span>
+                        <span>$QUIETDESK tier</span>
                       </label>
                       <span className="zero">
                         <LockKeyhole size={12} /> Zero-link preview
@@ -764,9 +769,9 @@ export default function Home() {
               </article>
               <article className="panel">
                 <Zap size={26} />
-                <h2>$SHROUD Staking Fee Discounts</h2>
+                <h2>$QUIETDESK Staking Fee Discounts</h2>
                 <p>
-                  Turn on the simulated $SHROUD tier in the quote to apply a 60%
+                  Turn on the simulated $QUIETDESK tier in the quote to apply a 60%
                   discount to the 0.12% solver fee.
                 </p>
               </article>
@@ -774,7 +779,7 @@ export default function Home() {
           </>
         )}
         <footer>
-          <span className="mono">SHROUD / CONFIDENTIAL ROUTING</span>
+          <span className="mono">quietdesk / CONFIDENTIAL ROUTING</span>
           <span>Client-side simulation · No mainnet transactions</span>
         </footer>
       </main>

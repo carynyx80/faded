@@ -97,21 +97,13 @@ svg {
   align-items: center;
   gap: 8px;
   font-weight: 700;
-  letter-spacing: 0.17em;
+  letter-spacing: -0.04em;
   font-size: 1.14rem;
 }
 .brand-mark {
-  display: grid;
-  place-items: center;
-  position: relative;
+  width: 26px;
+  height: 26px;
   color: var(--lime);
-}
-.brand-mark span {
-  position: absolute;
-  width: 11px;
-  height: 4px;
-  background: #080b08;
-  transform: rotate(-32deg);
 }
 nav {
   display: flex;
@@ -886,7 +878,7 @@ dialog::backdrop {
 @media (max-width: 390px) {
   .brand {
     font-size: 0.9rem;
-    letter-spacing: 0.1em;
+    letter-spacing: -0.035em;
   }
   .top .wallet {
     font-size: 0.72rem;

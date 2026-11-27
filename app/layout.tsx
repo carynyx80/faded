@@ -7,7 +7,7 @@ import "@fontsource/jetbrains-mono/latin-400.css";
 import "./style.css";
 
 export const metadata: Metadata = {
-  title: "SHROUD — Confidential Transfer Router",
+  title: "quietdesk — Confidential Transfer Router",
   description:
     "Explore confidential cross-domain routing in an interactive paper-mode preview.",
 };
